@@ -47,6 +47,3 @@ For more information, please refer to the official LangChain documentation.
 
 This tool is provided as-is, and the accuracy of the modifications cannot be guaranteed. Users are advised to review and refine the generated content as necessary.
 
----
-
-Please make sure to replace "your_app_filename.py" with the actual filename of your Streamlit app file. Feel free to customize the README to include any additional information or instructions that may be relevant to your project.
