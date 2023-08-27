@@ -1,35 +1,52 @@
-# Article Expansion/Condensation App using LangChain and GPT-3.5
 
-This Streamlit application allows users to modify the length of an article to a desired word count using OpenAI's GPT-3.5 model through the LangChain library.
+## LangChain Article Expander/Condenser
 
-## Setup Instructions
+The LangChain Article Expander/Condenser is a Streamlit app that utilizes OpenAI's GPT-3.5 Turbo language model to modify articles to meet a specific word count. This tool can be useful for students and writers who need to adjust the length of their text while retaining its core content.
 
-1. Install the required packages using the following command:
-   ```
+### Usage Instructions
+
+1. Install the required dependencies by running:
+
+   ```bash
    pip install streamlit langchain
    ```
 
-2. Replace the placeholders in the `articleModifier` function with actual values:
-   - `model`: Replace with the appropriate GPT-3.5 model variant.
-   - `temperature`: Adjust as needed to control the randomness of responses.
+2. Run the Streamlit app:
 
-3. Run the Streamlit app using the following command:
-   ```
-   streamlit run your_app_file_name.py
+   ```bash
+   streamlit run sourceCode.py
    ```
 
-## How to Use
+3. In the app interface:
+   - Enter the original article in the provided text area.
+   - Specify the desired word count in the corresponding input field.
+   - Click the "Expand/Condense" button.
 
-1. Enter the article text in the provided text area.
-2. Enter the desired word count in the text input field.
-3. Click the "Expand/Condense" button.
-4. The app will display the expanded or condensed article based on the given word count.
+### How It Works
 
-## Note
+The app leverages the LangChain library to interact with the GPT-3.5 Turbo model. It uses a chat-based approach, where a system message sets the context, and a human message instructs the model to modify the article's word count. The LangChain library handles the communication with the model and provides the modified article as output.
 
-- Make sure to have an OpenAI API key and set it up properly in your LangChain configuration, if required.
-- This application uses Streamlit for the user interface and LangChain for interacting with GPT-3.5.
+### Important Notes
+
+- This app requires access to OpenAI's GPT-3.5 Turbo model, which may involve API usage and costs.
+- The generated modifications are based on the input instructions and may not always produce perfect results. Manual review and adjustments might be necessary.
+- The app provides a streamlined interface for text modification, but it should not replace critical writing skills.
+
+### Limitations
+
+- The app's success in achieving the desired word count while maintaining content quality depends on the complexity and nature of the input article.
+- The app might require adjustments and refinements to produce optimal results for specific use cases.
+
+### About LangChain
+
+The LangChain library offers an intuitive way to interact with language models and streamline text generation tasks. It simplifies the process of setting up and running complex language tasks using OpenAI's models.
+
+For more information, please refer to the official LangChain documentation.
+
+### Disclaimer
+
+This tool is provided as-is, and the accuracy of the modifications cannot be guaranteed. Users are advised to review and refine the generated content as necessary.
 
 ---
 
-Please note that this README is a basic template and may need further customization to match your application's specific requirements and setup. Make sure to include any necessary details or instructions specific to your project and environment.
+Please make sure to replace "your_app_filename.py" with the actual filename of your Streamlit app file. Feel free to customize the README to include any additional information or instructions that may be relevant to your project.
