@@ -1,5 +1,3 @@
-
-
 # Article Expansion/Condensation App using LangChain and GPT-3.5
 
 This Streamlit application allows users to modify the length of an article to a desired word count using OpenAI's GPT-3.5 model through the LangChain library.
