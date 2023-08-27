@@ -1,6 +1,4 @@
-It looks like you've provided a Streamlit application code that utilizes the LangChain library for expanding or condensing articles to a specific word count using OpenAI's GPT-3.5 model. Below, I've provided a basic README for this code:
 
----
 
 # Article Expansion/Condensation App using LangChain and GPT-3.5
 
